@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1405079d57.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+       <form id="search">
+            <input type="text" class="input" id="search-text" placeholder="Enter Your City">
+           <button type="submit" class="input">Search</button>
+           <button type="submit" id="current-location" class="input">Current</button>
+        </form>
+    </header>
+
+    
+    <div class="row">
+        <div class="col">
+    <article>
+        <section>
+            <div class="grouping">
+            <div class="days">
+                <h2>Tue</h2>
+                <i class="fa-solid fa-cloud-sun icons"></i>
+            </div>
+            <div class="h1 unit-temp">
+                <h1>23°C</h1>
+            </div>
+        </div>
+        <div class="grouping">
+            <div class="days">
+                <h2>Wed</h2>
+                <i class="fa-solid fa-cloud-rain icons"></i>
+            </div>
+            <div class="h1">
+                <h1>23°C</h1>
+            </div>
+        </div>
+        <div class="grouping">
+            <div class="days">
+                <h2>Thur</h2>
+                <i class="fa-solid fa-sun sunny"></i>
+            </div>
+            <div class="h1">
+                <h1>23°C</h1>
+            </div>
+        </div>
+        <div class="grouping">
+            <div class="days">
+                <h2>Fri</h2>
+                <i class="fa-solid fa-cloud icons"></i>
+            </div>
+            <div class="h1">
+                <h1>23°C</h1>
+            </div>
+        </div>
+        <div class="grouping">
+            <div class="days">
+                <h2>Sart</h2>
+                <i class="fa-solid fa-cloud-showers-heavy icons"></i>
+            </div>
+            <div class="h1">
+                <h1>23°C</h1>
+            </div>
+        </div>
+        </section>
+    </article>
+</div>
+
+<div class="col">
+    <article>
+        <section>
+            <div class="temp">
+                <p id="city">Nairobi </p>
+                <p class="time"></p>
+                <p>Partly Cloud</p>
+            </div>
+            
+            <div class="current">
+                <div class="">
+                    <i class="fa-solid fa-cloud-sun icons"></i>
+                </div>
+                <div class="h1">
+                    <h1>23°C</h1>
+                </div>
+            </div>
+
+            <div class="temp">
+                <p>Precip: 40%</p>
+                <p>Humidity: 35%</p>
+                <p>Wind: 3km/hr</p>
+            </div>
+        </section>
+    </article>
+</div>
+</div>
+<footer>
+    <small>Check out my <a href="">github</a> repo</small>
+</footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
